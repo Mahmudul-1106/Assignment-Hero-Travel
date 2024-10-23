@@ -1,8 +1,188 @@
 /* Shared Style */
 
 body {
-  font-family: "Mulish";
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Mulish";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.btn-peimary {
+    border-radius: 8px;
+    background: #FF5400;
+    border: 0;
+    color: #FFF;
+    font-weight: 700;
+}
+
+main {
+    margin: 0 130px;
+}
+
+/* nav related styles */
+nav {
+    margin: 50px 125px 0 135px;
+
+}
+
+nav .desktop {
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .name {
+    display: flex;
+    align-items: center;
+}
+
+nav .name img {
+    margin-right: 15px;
+}
+
+nav .desktop h2 {
+    color: #131318;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+nav .name span {
+    color: #FF5400;
+}
+
+nav .menu ul {
+    display: flex;
+}
+
+nav .menu ul li {
+    list-style: none;
+    margin-left: 44px;
+    font-size: 1.125rem;
+}
+
+nav .menu span {
+    color: #FF5400;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+nav .mobile {
+    display: none;
+}
+
+/* nav style end */
+/* explore related styles starts */
+
+.explore {
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 80%), url(../Images/Group-13.png);
+    
+    /* background-image: url(../Images/Group-13.png); */
+    height: 500px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+
+
+
+.explore-content h1 {
+    padding-top: 100px;
+    margin-bottom: 0;
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.explore-content p {
+    margin-top: 30px;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.explore-form {
+    display: flex;
+    padding: 16px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    justify-content:space-evenly;
+    margin: 50px 15%;
+}
+
+.explore-form input {
+    padding: 16px;
+    width: 140px;
+    border-radius: 8px;
+    border: 0;
+}
+
+.explore-form button {
+    width: 140px;
+    text-align: center;
+}
+
+/* style for mobile */
+@media screen and (max-width:600px) {
+    nav {
+        margin: 0 20px;
+        padding: 0;
+    }
+
+    nav .desktop {
+        display: none;
+    }
+
+    nav .mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav .name img {
+        margin-right: 10px;
+        width: 15%;
+    }
+
+    main {
+        margin: 0 20px;
+    }
+    /* explore related styles */
+    .explore  {
+        background-size:cover;
+        border-radius: 16px;
+        height: 450px;
+    }
+    .explore-content h1{
+        padding-top: 30px;
+        font-size: 1.35rem;
+    }
+    .explore-content p{
+        margin: 10px 20px;
+        font-size: 0.85rem;
+    }
+    .explore-form{
+        flex-direction: column;
+        margin: 10px 25px;
+        align-items: center;
+        gap: 20px;
+    }
+    .explore-form input {
+        padding: 16px;
+        margin: 0;
+        width: 230px;
+        align-items: center;
+    }
+    .explore-form button {
+        padding: 15px;
+        width: 260px;
+        text-align: center;
+    }
 }
