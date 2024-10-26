@@ -12,12 +12,13 @@ body {
     margin: 0 auto;
 }
 
-.btn-peimary {
+.btn-primary {
     border-radius: 8px;
     background: #FF5400;
     border: 0;
     color: #FFF;
     font-weight: 700;
+    padding: 15px;
 }
 
 main {
@@ -80,16 +81,14 @@ nav .mobile {
 /* explore related styles starts */
 
 .explore {
-    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 80%), url(../Images/Group-13.png);
-    
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 60%), url(../Images/Group-13.png);
+
     /* background-image: url(../Images/Group-13.png); */
     height: 500px;
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
     border-radius: 16px;
 }
-
-
 
 .explore-content h1 {
     padding-top: 100px;
@@ -110,10 +109,11 @@ nav .mobile {
 
 .explore-form {
     display: flex;
+    flex-wrap: wrap;
     padding: 16px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
-    justify-content:space-evenly;
+    justify-content: space-between;
     margin: 50px 15%;
 }
 
@@ -128,6 +128,107 @@ nav .mobile {
     width: 140px;
     text-align: center;
 }
+
+/* popular tours related styles */
+
+
+/* destination related styles */
+
+
+.destination .row {
+    margin-top: 24px;
+    display: flex;
+    gap: 24px;
+    justify-content: space-around;
+}
+
+.destination .row .image {
+    position: relative;
+}
+
+.destination .row img {
+    width: 100%;
+    margin: 0;
+}
+
+.destination .row p {
+    position: absolute;
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* deals related styles */
+.deals-container {
+    margin-top: 50px;
+    position: relative;
+}
+
+.deals-container img {
+    width: 100%;
+}
+
+.deals-text {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -50%);
+    padding: 50px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+}
+
+.deals-text .deals-text-deadline {
+    word-spacing: 10px;
+}
+
+.deals-text-title {
+    color: #131318;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+.deals-text .mobile{
+    display: none;
+}
+
+.deals-text-price {
+    color: #FF5400;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+.deals-text .btn-primary{
+    padding: 15px 25px;
+}
+.deals-container-two {
+    margin-top: 50px;
+    position: relative;
+    height: 500px;
+}
+.deals-container-two img{
+    width: 100%;
+    height: 500px;
+}
+
+.deals-container-two .deals-text {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, -50%);
+    padding: 50px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+}
+
 
 /* style for mobile */
 @media screen and (max-width:600px) {
@@ -154,35 +255,108 @@ nav .mobile {
     main {
         margin: 0 20px;
     }
+
     /* explore related styles */
-    .explore  {
-        background-size:cover;
+    .explore {
+        background-size: cover;
         border-radius: 16px;
         height: 450px;
     }
-    .explore-content h1{
+
+    .explore-content h1 {
         padding-top: 30px;
         font-size: 1.35rem;
     }
-    .explore-content p{
+
+    .explore-content p {
         margin: 10px 20px;
         font-size: 0.85rem;
     }
-    .explore-form{
+
+    .explore-form {
         flex-direction: column;
         margin: 10px 25px;
         align-items: center;
         gap: 20px;
     }
+
     .explore-form input {
         padding: 16px;
         margin: 0;
         width: 230px;
         align-items: center;
     }
+
     .explore-form button {
         padding: 15px;
         width: 260px;
         text-align: center;
     }
+
+    /* destination related styles */
+    .destination .row {
+        flex-direction: column;
+        gap: 0;
+        margin: 0;
+    }
+
+    .destination .row .image {
+        margin-top: 15px;
+    }
+
+    .destination .row img {
+        max-height: 176px;
+    }
+
+    .destination .row p {
+        font-size: 1.2rem;
+        font-weight: 700;
+
+    }
+     /* deals related styles */
+    .deals-container img {
+        border-radius: 16px;
+        height: 500px;
+        object-fit:cover;
+    }
+    .deals-container-two img {
+        border-radius: 16px;
+        height: 500px;
+        object-fit:cover;
+    }
+    .deals-text {
+        margin: 0;
+        /* text-align: justify; */
+        top: 65%;
+        left: 12%;
+        transform: translate(-7%, -55%);
+        padding: 25px;
+    }
+    .deals-text .desktop{
+        display: none;
+    }
+    .deals-text .mobile{
+        display:contents;
+    }
+    
+    .deals-text .deals-text-deadline {
+        word-spacing: 10px;
+    }
+    
+    
+    .deals-container-two {
+        margin-top: 50px;
+        position: relative;
+        height: 500px;
+    }
+    
+    .deals-container-two .deals-text {
+        margin: 0;
+        /* text-align: justify; */
+        top: 65%;
+        left: 12%;
+        transform: translate(-7%, -55%);
+        padding: 25px;
+    }
+    
 }
