@@ -38,22 +38,22 @@ nav .desktop {
     align-items: center;
 }
 
-nav .name {
+.name {
     display: flex;
     align-items: center;
 }
 
-nav .name img {
+.name img {
     margin-right: 15px;
 }
 
-nav .desktop h2 {
+.desktop h2 {
     color: #131318;
     font-size: 2.25rem;
     font-weight: 800;
 }
 
-nav .name span {
+.name span {
     color: #FF5400;
 }
 
@@ -130,10 +130,49 @@ nav .mobile {
 }
 
 /* popular tours related styles */
+.popular-tour {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 50px auto;
+}
 
+.popular-text {
+    max-width: 577px;
+}
+
+.popular-tour h3 {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.popular-tour li {
+    margin-top: 10px;
+}
+
+.popular-tour button {
+    padding: 15px 35px;
+    margin-top: 10px;
+}
+
+.popular-tour img {
+    width: 100%;
+}
 
 /* destination related styles */
 
+.destination-text {
+    text-align: center;
+}
+
+.destination-text h3 {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0;
+}
 
 .destination .row {
     margin-top: 24px;
@@ -161,6 +200,51 @@ nav .mobile {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* choose-us related styles */
+.choose-us {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.choose-us h3 {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.choose-us .card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.choose-us .card {
+    padding: 30px 50px 30px 30px;
+    text-align: left;
+}
+
+.choose-us .hotel {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.choose-us .service {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.choose-us .discount {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    margin: 25px auto;
+    max-width: 573px;
+}
+
 
 /* deals related styles */
 .deals-container {
@@ -194,7 +278,8 @@ nav .mobile {
     font-size: 1.3rem;
     font-weight: 800;
 }
-.deals-text .mobile{
+
+.deals-text .mobile {
     display: none;
 }
 
@@ -203,15 +288,18 @@ nav .mobile {
     font-size: 1.25rem;
     font-weight: 800;
 }
-.deals-text .btn-primary{
+
+.deals-text .btn-primary {
     padding: 15px 25px;
 }
+
 .deals-container-two {
     margin-top: 50px;
     position: relative;
     height: 500px;
 }
-.deals-container-two img{
+
+.deals-container-two img {
     width: 100%;
     height: 500px;
 }
@@ -229,6 +317,158 @@ nav .mobile {
     backdrop-filter: blur(2.5px);
 }
 
+/* prefect-place related style */
+.prefect-place {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.place-details {
+    width: 100%;
+}
+
+.place-details h3 {
+    color: #131318;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.place-details li {
+    margin-top: 15px;
+    color: #131318;
+    font-weight: 700;
+}
+
+.place-details button {
+    padding: 15px 40px;
+    margin-top: 15px;
+}
+
+.place-video {
+    position: relative;
+    width: 100%;
+}
+
+.video-title {
+    position: absolute;
+    top: 13%;
+    bottom: 18%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 20%;
+    text-align: center;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background: linear-gradient(180deg, #131318 -31.96%, rgba(19, 19, 24, 0.00) 100%);
+
+}
+
+/* newsletter-container related style */
+.newsletter-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 100px;
+}
+
+.newsletter-text {
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 15px 40px;
+}
+
+.newsletter-text h3 {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.newsletter-text p {
+    color: #5A5A5D;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(19, 19, 24, 0.10);
+    padding-bottom: 15px;
+}
+
+.newsletter-text input {
+    margin-top: 15px;
+    width: 95%;
+    padding: 16px 0px 16px 20px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: 0;
+}
+
+.newsletter-text .btn-primary {
+    margin-top: 25px;
+    margin-bottom: 0;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.newsletter-image {
+    position: relative;
+}
+
+.newsletter-image img {
+    width: 100%;
+    margin: 0;
+}
+
+.newsletter-image p {
+    position: absolute;
+    /* top: 50%; */
+    /* bottom: 10%;
+    left: 44%; */
+    transform: translate(95%, -180%) rotate(-20.628deg);
+
+    border-radius: 16px;
+    background: #FF5400;
+    padding: 20px 30px;
+    max-width: 320px;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.newsletter-image span {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+/* footer related style */
+footer {
+    margin-top: 70px;
+    padding: 50px 0;
+    background: rgba(19, 19, 24, 0.05);
+    text-align: center;
+}
+
+footer .name {
+    display: flex;
+    justify-content: center;
+}
+
+footer .icon {
+    margin-top: 30px;
+    letter-spacing: 15px;
+}
+
+footer .line {
+    margin: 50px auto;
+    max-width: 870px;
+    height: 1px;
+    background: rgba(19, 19, 24, 0.10);
+}
+
+footer .copy {
+    font-weight: 300;
+}
 
 /* style for mobile */
 @media screen and (max-width:600px) {
@@ -293,6 +533,12 @@ nav .mobile {
         text-align: center;
     }
 
+    /* popular tours related styles */
+    .popular-tour {
+        display: flex;
+        flex-direction: column;
+    }
+
     /* destination related styles */
     .destination .row {
         flex-direction: column;
@@ -313,17 +559,26 @@ nav .mobile {
         font-weight: 700;
 
     }
-     /* deals related styles */
+
+    /* choose-us related styles */
+    .choose-us .card-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* deals related styles */
     .deals-container img {
         border-radius: 16px;
         height: 500px;
-        object-fit:cover;
+        object-fit: cover;
     }
+
     .deals-container-two img {
         border-radius: 16px;
         height: 500px;
-        object-fit:cover;
+        object-fit: cover;
     }
+
     .deals-text {
         margin: 0;
         /* text-align: justify; */
@@ -332,31 +587,64 @@ nav .mobile {
         transform: translate(-7%, -55%);
         padding: 25px;
     }
-    .deals-text .desktop{
+
+    .deals-text .desktop {
         display: none;
     }
-    .deals-text .mobile{
-        display:contents;
+
+    .deals-text .mobile {
+        display: contents;
     }
-    
+
     .deals-text .deals-text-deadline {
         word-spacing: 10px;
     }
-    
-    
+
+
     .deals-container-two {
         margin-top: 50px;
         position: relative;
         height: 500px;
     }
-    
+
     .deals-container-two .deals-text {
         margin: 0;
-        /* text-align: justify; */
         top: 65%;
         left: 12%;
         transform: translate(-7%, -55%);
         padding: 25px;
     }
-    
+
+    /* prefect-place related style */
+    .prefect-place {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .place-details {
+        padding: 0 10px;
+        max-width: 100%;
+    }
+
+    /* newsletter-container related style */
+    .newsletter-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .newsletter-image img {
+        width: 100%;
+        /* height: 400px; */
+        margin: 0;
+    }
+
+    .newsletter-image p {
+        position: absolute;
+        transform: translate(50%, -180%) rotate(-20.628deg);
+        max-width: 220px;
+        padding: 10px;
+    }
+
 }
